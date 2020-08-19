@@ -66,7 +66,7 @@ then
 	echo -e $red [✔]::[Internet Connection]: OFFLINE!;
 fi
 which /usr/bin/curl > /dev/null 2>&1
-	if [[ "$?" -q "0" ]]; then
+	if [[ "$?" -eq "0" ]]; then
 		sleep 0.5
 		echo -e $green [✔]::[curl]: FOUND! ;
 	else
