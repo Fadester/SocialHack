@@ -65,9 +65,18 @@ elif [ $png == "2" ];
 then
 	echo -e $red [✔]::[Internet Connection]: OFFLINE!;
 fi
-
+which /usr/bin/curl > /dev/null 2>&1
+	if [[ "$?" -q "0" ]]; then
+		sleep 0.5
+		echo -e $green [✔]::[curl]: FOUND! ;
+	else
+		echo -e "$yellow installing curl..."
+		apt-get install -y curl > /dev/null 2>&1
+	fi
+	
 which /usr/bin/openssl > /dev/null 2>&1
 	if [[ "$?" -eq "0" ]]; then
+		sleep 0.5
 		echo -e $green [✔]::[openssl]: FOUND! ;
 	else
 		echo -e $yellow installing openssl...
