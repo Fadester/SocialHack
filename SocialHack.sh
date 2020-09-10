@@ -1,6 +1,6 @@
 #!/bin/bash
 #coded by Fadester
-#v1.1
+#v1.2
 
 #Colors
 
@@ -25,7 +25,7 @@ printf " \e[1;92m  ___) | (_) | (__| | (_| | |\e[1;33m  _  | (_| | (__|   < \e[0
 printf " \e[1;92m |____/ \___/ \___|_|\____|_|\e[1;33m_| |_|\____|\___|_|\_\ \e[0m\n "
 echo
 printf "\e[0;36mcoded by Fadester\e[0m\n"
-printf "\e[0;36mv1.1\e[0m\n"
+printf "\e[0;36mv1.2\e[0m\n"
 echo ""
 printf "\e[5m\e[31mDISCLAIMER\e[0m\n"
 printf "\e[101m Invading the privacy of others is illegal and I'm not liable for anything!\e[0m\n"
